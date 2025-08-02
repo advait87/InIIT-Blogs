@@ -6,19 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HTML 5 Boilerplate</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/homeStyles.css">
+    <link rel="stylesheet" href="css/viewBlogStyles.css">
     <link rel="stylesheet" href="css/navStyles.css">
   <!-- Insert this script at the bottom of the HTML, but before you use any Firebase services -->
   <script src="js/firebaseSetup.js" defer type="module"></script>
   <script src="js/script.js" defer type="module"></script>
-  <script src="js/blogsScript.js" defer type="module"></script>
+  <script src="js/viewBlogScript.js" defer type="module"></script>
   </head>
   <body>
 	  <div id="navbar">
 		  <div id="logo"> Logo </div>
 
 		  <div id="rightBox">
-			  <a href="createBlog.html"><div id="createBlog"> Create Blog </div></a>
 			  <div id="userStatus"> 
 				  <div id="userIcon">User</div>
 			  </div>
@@ -26,15 +25,14 @@
 	  </div>
 	
 
-	  <div id="blogs">
-		  <div id="loadingContainer">
-			  <img id="loadingImage" src="assets/loadingImage.gif">
-		  </div>
+	  <div id="blog">
+		  <h1 id="title"></h1>
+		  <p id="subline"></p>
+		  <p id="author"></p>
+		  <p id="body"></p>
 	  </div>
-
-
-
 
   </body>
 </html>
+
 
